@@ -44,21 +44,8 @@ class process:
         xy[xy > 0.999999] = 255.0
         xy = np.uint8(xy)
         return xy
-    
-    def extraction(self, img, cimg):
-        edge = self.detect_edges(img)
-        flood1 = self.flood_and_extract(edge)
-        blur = self.blurred(flood1)
-        flood2 = self.flood_and_extract(blur)
-        
-        contour = self.draw_biggest_contour(flood2)
-        flood3 = self.flood_and_extract(contour)
-        
-        segmented = cv2.bitwise_and(cimg, cimg, mask =  flood3)
-        segmented[segmented < 35] = 255
-        
-        return segmented
-        
+
+
     def video_gen(self, pathIn, pathOut):
         img_arr = []
         images = [img for img in os.listdir(pathIn) if isfile(join(pathIn, img))] 
@@ -78,6 +65,21 @@ class process:
         for i in range(len(img_arr)):
             anim.write(img_arr[i])
         anim.release()
+    
+    def extraction(self, img, cimg):
+        edge = self.detect_edges(img)
+        flood1 = self.flood_and_extract(edge)
+        blur = self.blurred(flood1)
+        flood2 = self.flood_and_extract(blur)
+        
+        contour = self.draw_biggest_contour(flood2)
+        flood3 = self.flood_and_extract(contour)
+        
+        segmented = cv2.bitwise_and(cimg, cimg, mask =  flood3)
+        segmented[segmented < 35] = 255
+        
+        return segmented
+        
 
     
     def final(self, rt, dirr):
