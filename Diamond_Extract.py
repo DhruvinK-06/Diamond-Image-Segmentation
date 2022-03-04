@@ -58,7 +58,7 @@ class process:
             for j in range(time):
                 img_arr.append(img)
 
-        fps = 300
+        fps = 275
 
         anim = cv2.VideoWriter(pathOut, cv2.VideoWriter_fourcc(*"mp4v"), fps, size)
 
@@ -118,10 +118,10 @@ class process:
                 video_path = os.path.join(video_path, 'vid.avi')
                 self.video_gen(path_to_extracted, video_path)
 
-root = os.getcwd()
+root = os.path.dirname(__file__)
 data = os.path.join(root, 'Diamonds')
 print(os.getcwd())
-folders = ['Shape_1d_256i', 'Shape_5d_256i','Shape_10d_256i'] 
+folders = ['Shape_1d_256i', 'Shape_5d_256i', 'Shape_10d_256i'] 
 p = process()
 for i in folders:
     x = os.path.join(data, i)
