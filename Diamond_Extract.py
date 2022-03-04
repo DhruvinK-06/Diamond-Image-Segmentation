@@ -121,7 +121,7 @@ class process:
 root = os.getcwd()
 data = os.path.join(root, 'Diamonds')
 print(os.getcwd())
-folders = ['Shape_1d_256i'] 
+folders = ['Shape_1d_256i', 'Shape_5d_256i','Shape_10d_256i'] 
 p = process()
 for i in folders:
     x = os.path.join(data, i)
