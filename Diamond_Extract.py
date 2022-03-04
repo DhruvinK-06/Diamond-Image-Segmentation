@@ -118,9 +118,10 @@ class process:
                 video_path = os.path.join(video_path, 'vid.avi')
                 self.video_gen(path_to_extracted, video_path)
 
-data = 'c:\\users\\dhruv\\Jupyter Notebooks\\projects\\MiNed_Hackathon\\Diamonds'
-root = 'c:\\users\\dhruv\\Jupyter Notebooks\\projects\\MiNed_Hackathon'
-folders = ['Shape_1d_256i', 'Shape_5d_256i', 'Shape_10d_256i'] 
+root = os.getcwd()
+data = os.path.join(root, 'Diamonds')
+print(os.getcwd())
+folders = ['Shape_1d_256i'] 
 p = process()
 for i in folders:
     x = os.path.join(data, i)
