@@ -32,4 +32,4 @@ Make sure that the main.py and the dataset folder are in the same directory. The
 
 ## Video
 
-![gif](https://user-images.githubusercontent.com/72988991/156868748-e0cc8575-d65e-4b1f-9023-e6892df3c6f9.gif)
+![vid](https://user-images.githubusercontent.com/72988991/156888314-df613a4c-d04d-4362-8383-a4e4e5821661.gif)
