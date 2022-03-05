@@ -25,7 +25,7 @@ Make sure that the main.py and the dataset folder are in the same directory. The
 
 ![7361598927_242](https://user-images.githubusercontent.com/72988991/156869223-82300ef7-2925-49b3-be39-9cb342688dd3.png)
 
-![7361598927_242](https://user-images.githubusercontent.com/72988991/156869216-5d52d99b-056b-4eab-8f07-99ac4cf4eec7.png)
+![7361598927_242](https://user-images.githubusercontent.com/72988991/156888548-8bd76b87-1c81-4f3f-87e8-b10e2ea05bda.png)
 
 
 
