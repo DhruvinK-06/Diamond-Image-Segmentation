@@ -1,0 +1,7 @@
+streamlit
+requests
+numpy
+scikit-image
+opencv-python
+Pillow
+opencv-contrib-python
