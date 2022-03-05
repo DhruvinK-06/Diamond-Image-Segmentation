@@ -76,8 +76,11 @@ class process:
         flood3 = self.flood_and_extract(contour)
         
         segmented = cv2.bitwise_and(cimg, cimg, mask =  flood3)
-        segmented[segmented < 35] = 255
-        
+
+        h, w = segmented.shape[:2]
+        mask = np.zeros([h+2, w+2], np.uint8)
+        cv2.floodFill(segmented, mask,(0,0), (255.0, 255, 255))
+                
         return segmented
         
 
@@ -121,7 +124,8 @@ class process:
 root = os.path.dirname(__file__)
 data = os.path.join(root, 'Diamonds')
 print(os.getcwd())
-folders = ['Shape_1d_256i', 'Shape_5d_256i', 'Shape_10d_256i'] 
+folders = ['Shape_1d_256i']
+# , 'Shape_5d_256i', 'Shape_10d_256i'] 
 p = process()
 for i in folders:
     x = os.path.join(data, i)
