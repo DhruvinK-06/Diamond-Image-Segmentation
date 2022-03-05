@@ -1,0 +1,14 @@
+Website Overview:
+A website where a user can simply upload diamond image and get the extracted diamond.
+Website is build using Python and its Libraries.
+
+Step to follow to run the site:
+
+1. open CMD
+2. Make sure to install Streanlit , Open-Cv 
+3. Open CMD
+4. Type Streamlit run app.py
+5. Upload image 
+6. Input image will be shown
+7. Output image of extracted Diamond will be shown.
+8. Download Image.
