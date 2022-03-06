@@ -5,13 +5,6 @@ We are given a dataset of diamonds, each comprising 256 images at different angl
 
 
 
-## Authors
-
-- [@DhruvinK-06](https://github.com/DhruvinK-06)
-- [@yshraj](https://github.com/yshraj)
-- [@chaitalithkkr](https://github.com/chaitalithkkr)
-
-
 ## Requirements
 
 - OpenCV v4.5.3
